@@ -15,9 +15,9 @@
 			$imgs = dirname(__FILE__)."/article";
 			if(file_exists($_FILES['photo2']['tmp_name'])&&is_uploaded_file($_FILES['photo2']['tmp_name']))
                 {
-
+					$random = rand();
                     $photos = $_FILES['photo2']['name'];
-                    $photos = $log."photo.".explode(".",$photos)[1];//new name form : login+photo+extention of the original file (to avoid problems registring long file names in db)
+                    $photos = $log."photo_".$random.explode(".",$photos)[1];//new name form : login+photo+extention of the original file (to avoid problems registring long file names in db)
                 
                     if(!file_exists($imgs)):
                         mkdir($imgs);

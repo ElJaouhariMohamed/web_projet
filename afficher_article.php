@@ -29,18 +29,31 @@
             $title = $u->Titre;
             $date = $u->TEMPV;
             $text = $u->Text;
+            $img = $u->IMG;
         }
-        
-        echo "<div class='col-md-12 lh-base ' style='margin-top :5%'>";
-        echo "<h1 class='col-md-12 text-center'>$title</h1><br>";
-        if(isset(explode(' ',$date)[0]) & isset(explode(' ',$date)[1])){
-            echo "<h3 class='col-md-4' style='float:right'>Published the ".explode(' ',$date)[0]." at ".explode(' ',$date)[1]."</h3><br><br>";
-        } else{
-            echo "<h3 class='col-md-4' style='float:right'>Not yet published...</h3><br><br>";
-        }
-        echo "<p class='fs-3 fw-bolder lh-base' style='margin-left : 10%'>$text</p></div>";
-        ?>
-
+        $img = "./article/".$img;
+		echo "<div class='container'>";
+		echo "
+		<div class='row'>
+			<div class='col'>Welcome back, User!</div>
+		</div>
+		";
+        echo "<div class='row'>
+			<div class='col-2'></div>
+			<div class='col-8 text-center fs-1 '><u>".$title."</u></div>
+			<div class='col-2'></div>
+		</div>"; 
+		echo "<div class='row'>
+			<div class='col-2'></div>
+			<div class='col-8 '> <img src='$img' class='d-block w-100' alt='article_photo'  > </div>
+			<div class='col-2'></div>
+		</div>";
+		echo "<div class='row'>
+			<div class='col-1'></div>
+			<div class='col-10 lead text-capitalize fs-2' style='margin-top:2%'>".$text."</div>
+			<div class='col-1'></div>
+		</div>"; 
+		?>
 		</main>
 	</body>
 </html>

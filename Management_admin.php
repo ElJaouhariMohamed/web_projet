@@ -36,10 +36,10 @@
 		
 		while($u = $res->fetch(PDO::FETCH_OBJ)){
 			if($u->IMG!='aucune' ){
-			echo "<tr><td>".$u->Id_Article."</td><td>$u->Titre</td><td>$u->Id_writer</td><td>$u->TEMPAJ</td><td>".$u->TEMPV."</td><td>".$u->Text."</td><td><a href='./article/$u->IMG'>$u->IMG</a></td><td>$u->valid</td><td><p><a href='./afficher_article.php?id=".$u->Id_Article."'>Afficher</a> - <a href='./modifier_article.php?id=".$u->Id_Article."'>Modifier</a> - <a href='./supprimer_article.php?id=".$u->Id_Article."'>Supprimer</a> - <a href='./valider_article.php?id=".$u->Id_Article."'>Valider</a></p></td></tr>";
+			echo "<tr><td>".$u->Id_Article."</td><td>$u->Titre</td><td>$u->Id_writer</td><td>$u->TEMPAJ</td><td>".$u->TEMPV."</td><td>".$u->Text."</td><td><a href='./article/$u->IMG'>$u->IMG</a></td><td>$u->valid</td><td><p><a href='./afficher_article.php?id=".$u->Id_Article."'>Afficher</a> - <a href='./supprimer_article.php?id=".$u->Id_Article."'>Supprimer</a> - <a href='./valider_article.php?id=".$u->Id_Article."'>Valider</a></p></td></tr>";
 		}
 		if($u->IMG=='aucune' ){
-			echo "<tr><td>".$u->Id_Article."</td><td>$u->Titre</td><td>$u->Id_writer</td><td>$u->TEMPAJ</td><td>".$u->TEMPV."</td><td>".$u->Text."</td><td>$u->IMG</td><td>$u->valid</td><td><p><a href='./afficher_article.php?id=".$u->Id_Article."'>Afficher</a> - <a href='./modifier_article.php?id=".$u->Id_Article."'>Modifier</a> - <a href='./supprimer_article.php?id=".$u->Id_Article."'>Supprimer</a> - <a href='./valider_article.php?id=".$u->Id_Article."'>Valider</a></p></td></tr>";
+			echo "<tr><td>".$u->Id_Article."</td><td>$u->Titre</td><td>$u->Id_writer</td><td>$u->TEMPAJ</td><td>".$u->TEMPV."</td><td>".$u->Text."</td><td>$u->IMG</td><td>$u->valid</td><td><p><a href='./afficher_article.php?id=".$u->Id_Article."'>Afficher</a> - <a href='./supprimer_article.php?id=".$u->Id_Article."'>Supprimer</a> - <a href='./valider_article.php?id=".$u->Id_Article."'>Valider</a></p></td></tr>";
 		}
 
 		}
