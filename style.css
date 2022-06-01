@@ -1,0 +1,137 @@
+.trombimg {
+   height:150px;
+   width : 150px;
+   object-fit:cover;
+   object-position:50% 50%;
+   opacity: 0.8;
+}
+
+.trombimg:hover{
+	opacity: 1;
+}
+.trombbutton{
+	font-size: 10px;
+	justify-content: center;
+}
+
+.trombname{
+	font-size: 20px;
+	font-family: Open Sans;
+}
+.trombcontainer{
+	display: flex;
+  	justify-content: center;
+  	align-items: center;
+  	flex: 0 0 120px;
+  	flex-wrap: wrap;
+  	margin: 10px;
+}
+
+.header{
+	background-color: #efc497;
+	color: #1e6761;
+}
+.header a{
+	color: #1e6761;
+}
+
+.header a:hover{
+	color: #1a6761;
+}
+
+.table {
+	background-color: #efc497;
+	margin: 10px;
+}
+td{
+	color: #1a6761;
+}
+
+thead{
+	background-color: #3f3d3d;
+	
+}
+thead td{
+	color: #aaaaaa;
+}
+.table a{
+	color :#1a6761;
+}
+.table a: hover{
+	color :#1a6261;
+}
+
+html{
+	background-color: #1a6761;
+}
+main{
+	background-color: #1a6761;
+	color :#efc497; 
+	
+}
+
+main a{
+	color: #efc497;
+}
+
+main a:hover{
+	color: #efc457;
+}
+
+.submitclear{
+	padding: 5px;
+	margin: 10px;
+	background-color: #efc497;
+}
+
+.slogonbig{
+	height:256px;
+	width: 547px;
+}
+
+.slogonbiglog{
+	height:128px;
+	width: 273.5px;
+}
+
+.abtus{
+	background-color: #efc497;
+	color: #1a6761;
+	margin: 10px;
+}
+
+.nav-links a{
+	color: #1a6761;
+}
+.nav-links a:hover{
+	color: #1a67f1;
+}
+
+
+.bg-image-vertical {
+position: relative;
+overflow: hidden;
+background-repeat: no-repeat;
+background-position: right center;
+background-size: auto 100%;
+}
+
+@media (min-width: 1025px) {
+.h-custom-2 {
+height: 100%;
+}
+}
+
+.profilephoto{
+	object-fit:cover;
+   object-position:50% 50%;
+   border: 3px solid #efc497;
+   opacity: 0.8;
+	width:	320px;
+	margin: 10px;
+}
+
+.profilephoto:hover{
+	opacity: 1;
+}
+
