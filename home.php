@@ -86,7 +86,8 @@
 						$img = "./article/".$array_articles[$i][2];
 						echo "<img src='$img' class='d-block w-100' alt='article_".$array_articles[$i][0]."_photo' >";
 					} else {
-						echo "<img src='./photo_dault.png' class='d-block w-100' alt='article_".$array_articles[$i][0]."_photo' >";
+						$img = dirname(__FILE__)."/pp.png";
+						echo "<img src='$img' class='d-block w-100' alt='article_".$array_articles[$i][0]."_photo' >";
 					}
 				echo "</div><div class='col-1'></div></div>";
 			echo "<div class='carousel-caption d-none d-md-block'>";
