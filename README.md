@@ -6,6 +6,7 @@ This project was done by 2 students of The National School of Applied Science of
 
 ## 2) StudSpace :
 StudSpace is a feature-rich web application designed to streamline academic interactions within an educational institution. It provides a user-friendly platform for administrators, professors, and students to perform various tasks, including searching for students, creating articles, commenting on articles, messaging, and managing user accounts.
+
 ![alt text](https://github.com/ElJaouhariMohamed/web_projet/blob/main/pp.png)
 
 ## 3) Collaborators :
